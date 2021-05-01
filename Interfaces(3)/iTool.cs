@@ -37,9 +37,9 @@ namespace Assignment
             get;
         }
 
-        void addBorrower(iMember); //add a member to the borrower list
+        void addBorrower(iMember aMember); //add a member to the borrower list
 
-        void deleteBorrower(iMember); //delte a member from the borrower list
+        void deleteBorrower(iMember aMember); //delte a member from the borrower list
 
         override string ToString(); //return a string containning the name and the available quantity quantity this tool 
 
