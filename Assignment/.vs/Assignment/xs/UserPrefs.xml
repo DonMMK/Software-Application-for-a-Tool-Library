@@ -1,22 +1,26 @@
-﻿<Properties StartupConfiguration="{DD116B32-8CC2-40B3-8FEF-A70943E57D6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment/iTool.cs">
+﻿<Properties StartupConfiguration="{72FB0B3F-44F7-4034-975A-E9D1F8D0A699}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment/Program.cs">
     <Files>
-      <File FileName="Assignment/Program.cs" Line="26" Column="1" />
-      <File FileName="Assignment/iMemberCollection.cs" Line="24" Column="1" />
-      <File FileName="Assignment/iMember.cs" Line="1" Column="1" />
-      <File FileName="Assignment/iToolLibrarySystem.cs" Line="5" Column="21" />
-      <File FileName="Assignment/iToolCollection.cs" Line="1" Column="1" />
-      <File FileName="Assignment/iTool.cs" Line="46" Column="6" />
+      <File FileName="Assignment/Program.cs" Line="1" Column="1" />
+      <File FileName="iMember.cs" Line="1" Column="1" />
+      <File FileName="iMemberCollection.cs" Line="1" Column="1" />
+      <File FileName="iTool.cs" Line="1" Column="1" />
+      <File FileName="iToolCollection.cs" Line="1" Column="1" />
+      <File FileName="iToolLibrarySystem.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment" expanded="True">
+            <Node name="Solution Items" expanded="True" />
             <Node name="Assignment" expanded="True">
-              <Node name="Tool.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
