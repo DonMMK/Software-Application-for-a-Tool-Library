@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{72FB0B3F-44F7-4034-975A-E9D1F8D0A699}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iMember.cs">
     <Files>
       <File FileName="Assignment/Program.cs" Line="1" Column="1" />
-      <File FileName="iMember.cs" Line="1" Column="1" />
+      <File FileName="iMember.cs" Line="41" Column="29" />
       <File FileName="iMemberCollection.cs" Line="1" Column="1" />
       <File FileName="iTool.cs" Line="1" Column="1" />
       <File FileName="iToolCollection.cs" Line="1" Column="1" />
@@ -12,9 +12,10 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment" expanded="True">
-            <Node name="Solution Items" expanded="True" />
+            <Node name="Solution Items" expanded="True" selected="True" />
             <Node name="Assignment" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="References" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
