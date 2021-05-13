@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{DD116B32-8CC2-40B3-8FEF-A70943E57D6D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment/iTool.cs">
+    <Files>
+      <File FileName="Assignment/Program.cs" Line="26" Column="1" />
+      <File FileName="Assignment/iMemberCollection.cs" Line="24" Column="1" />
+      <File FileName="Assignment/iMember.cs" Line="1" Column="1" />
+      <File FileName="Assignment/iToolLibrarySystem.cs" Line="5" Column="21" />
+      <File FileName="Assignment/iToolCollection.cs" Line="1" Column="1" />
+      <File FileName="Assignment/iTool.cs" Line="46" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment" expanded="True">
+            <Node name="Assignment" expanded="True">
+              <Node name="Tool.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assignment PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

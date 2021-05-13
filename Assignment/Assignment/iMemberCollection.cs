@@ -6,7 +6,7 @@ namespace Assignment
 {
     //The specification of MemberCollection ADT, which is used to store and manipulate a collection of members
     
-    interface iMemberCollection
+    public interface iMemberCollection
     {
         int Number // get the number of members in the community library
         {
