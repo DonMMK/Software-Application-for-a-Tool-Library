@@ -1,6 +1,0 @@
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/Assignment/Assignment/bin/Debug/Assignment.exe
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/Assignment/Assignment/bin/Debug/Assignment.pdb
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/Assignment/Assignment/obj/Debug/Assignment.csprojAssemblyReference.cache
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/Assignment/Assignment/obj/Debug/Assignment.csproj.CoreCompileInputs.cache
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/Assignment/Assignment/obj/Debug/Assignment.exe
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/Assignment/Assignment/obj/Debug/Assignment.pdb
