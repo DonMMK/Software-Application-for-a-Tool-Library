@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n10496262\\OneDrive - Queensland University of Technology\\Desktop\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj": {}
+    "D:\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n10496262\\OneDrive - Queensland University of Technology\\Desktop\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj": {
+    "D:\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n10496262\\OneDrive - Queensland University of Technology\\Desktop\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj",
+        "projectUniqueName": "D:\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj",
         "projectName": "ToolLibrary",
-        "projectPath": "C:\\Users\\n10496262\\OneDrive - Queensland University of Technology\\Desktop\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj",
+        "projectPath": "D:\\ToolLibrary\\ToolLibrary\\ToolLibrary.csproj",
         "packagesPath": "C:\\Users\\n10496262\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n10496262\\OneDrive - Queensland University of Technology\\Desktop\\ToolLibrary\\ToolLibrary\\obj\\",
+        "outputPath": "D:\\ToolLibrary\\ToolLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

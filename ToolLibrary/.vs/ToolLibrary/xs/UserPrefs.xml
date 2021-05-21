@@ -11,11 +11,12 @@
       <File FileName="ToolLibrary/iMember.cs" />
       <File FileName="ToolLibrary/iMemberCollection.cs" />
       <File FileName="ToolLibrary/iToolLibrarySystem.cs" />
-      <File FileName="ToolLibrarySystem.cs" Line="7" Column="56" />
     </Files>
     <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ToolLibrary" expanded="True" selected="True" />
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
