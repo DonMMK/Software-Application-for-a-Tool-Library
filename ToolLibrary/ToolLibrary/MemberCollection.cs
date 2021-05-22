@@ -6,16 +6,17 @@ namespace ToolLibrary
 {
     public class MemberCollection : iMemberCollection
     {
+        BSTree MemberTree = new BSTree();
         public int Number => throw new NotImplementedException();
 
         public void add(Member aMember)
         {
-            throw new NotImplementedException();
+            MemberTree.Insert(aMember);   
         }
 
         public void delete(Member aMember)
         {
-            throw new NotImplementedException();
+            MemberTree.Delete(aMember);
         }
 
         public bool search(Member aMember)

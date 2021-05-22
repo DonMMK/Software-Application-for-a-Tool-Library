@@ -36,14 +36,7 @@ namespace ToolLibrary
 
         public string UserName;
 
-        public void RegisterMember()
-        {
-            Console.WriteLine("You have reached member class");
-            UserName = firstname + lastname;
-            // Add member to the array
-
-            ShowMemberInfo();
-        }
+        
         
 
         public Tool[] BorrowedTool = new Tool[9];
@@ -62,14 +55,7 @@ namespace ToolLibrary
 
         }
         
-        public void ShowMemberInfo()
-        {
-            Console.WriteLine("First Name: " + FirstName);
-            Console.WriteLine("Last Name: " + LastName);
-            Console.WriteLine("Contact Number: " + ContactNumber);
-            Console.WriteLine("Password: " + PIN);
-
-        }
+        
 
         public string[] Tools => throw new NotImplementedException();
 

@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace ToolLibrary
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
-        {
+        public static void Main(string[] args)
+        { 
             MainMenu();
-
         }
 
         
@@ -38,8 +37,12 @@ namespace ToolLibrary
                     break;
                 case "0":
                     break;
+                default :
+                    MainMenu();
+                    break;
 
-                    
+
+
             }
 
 
@@ -71,21 +74,28 @@ namespace ToolLibrary
                     Console.WriteLine("==========================================");
                     Console.WriteLine("");
 
+                    Tool NewTool = new Tool();
+                    
                     Console.WriteLine("Please enter the tool");
-                    string ToolName = Console.ReadLine();
+                    NewTool.Name = Console.ReadLine();
 
                     Console.WriteLine("Quantity of tools");
-                    int Quantity = Convert.ToInt32(Console.ReadLine());
+                    NewTool.Quantity = Convert.ToInt32(Console.ReadLine());
 
                     Console.WriteLine("AvailableQuantity of tools");
-                    int AvailableQuantity = Convert.ToInt32(Console.ReadLine());
+                    NewTool.AvailableQuantity = Convert.ToInt32(Console.ReadLine());
 
                     Console.WriteLine("Number of borrowings");
-                    int NoBorrowers = Convert.ToInt32(Console.ReadLine());
-                    Tool NewTool = new Tool(ToolName, Quantity, AvailableQuantity, NoBorrowers);
+                    NewTool.NoBorrowings = Convert.ToInt32(Console.ReadLine());
 
-                    NewTool.AddTool();
+                    int num = 0;
+                    Int32.TryParse(Console.ReadLine(), out num);
+                     
 
+                    //NewTool.AddTool();
+                    ToolCollection newToolCollection = new ToolCollection();
+                    newToolCollection.add(NewTool);
+                    
                     Console.WriteLine("Press any key to go back to staff menu");
                     Console.ReadLine();
                     StaffMenu();
@@ -94,7 +104,7 @@ namespace ToolLibrary
                     Console.Clear();
                     Console.WriteLine("Welcome to the Tool Library");
                     Console.WriteLine("================Staff Menu================");
-                    Console.WriteLine("2. Add new pieces of an existing tool");
+                    Console.WriteLine("2. Add new pieces of an existing tool"); // increase quantity
                     Console.WriteLine("==========================================");
                     Console.WriteLine("");
 
@@ -122,21 +132,21 @@ namespace ToolLibrary
                     Console.WriteLine("==========================================");
                     Console.WriteLine("");
 
+                    Member NewMember = new Member();
+
                     Console.WriteLine("Please enter first name: ");
-                    string firstName = Console.ReadLine();
+                    NewMember.FirstName = Console.ReadLine();
 
                     Console.WriteLine("Please enter last name: ");
-                    string lastName = Console.ReadLine();
+                    NewMember.LastName = Console.ReadLine();
 
                     Console.WriteLine("Please enter contact number: ");
-                    string contactNumber = Console.ReadLine();
+                    NewMember.ContactNumber = Console.ReadLine();
 
                     Console.WriteLine("Please enter four digit PIN: ");
-                    string pIN = Console.ReadLine();
-                    Member NewMember = new Member(firstName, lastName, contactNumber, pIN);
-
-                    NewMember.RegisterMember();
-
+                    NewMember.PIN = Console.ReadLine();
+                    MemberCollection memberCollection = new MemberCollection();
+                    memberCollection.add(NewMember);
 
                     Console.WriteLine("Press any key to go back to staff menu");
                     Console.ReadLine();
@@ -150,6 +160,22 @@ namespace ToolLibrary
                     Console.WriteLine("==========================================");
                     Console.WriteLine("");
 
+                    Member RemoveMember = new Member();
+
+                    Console.WriteLine("Please enter first name you want t: ");
+                    RemoveMember.FirstName = Console.ReadLine();
+
+                    Console.WriteLine("Please enter last name you want to delete: ");
+                    RemoveMember.LastName = Console.ReadLine();
+
+                    //Console.WriteLine("Please enter contact number: ");
+                    //RemoveMember.ContactNumber = Console.ReadLine();
+
+                    //Console.WriteLine("Please enter four digit PIN: ");
+                    //RemoveMember.PIN = Console.ReadLine();
+                    MemberCollection deleteMember = new MemberCollection();
+                    deleteMember.delete(RemoveMember);
+
                     Console.WriteLine("Press any key to go back to staff menu");
                     Console.ReadLine();
                     StaffMenu();
@@ -162,12 +188,18 @@ namespace ToolLibrary
                     Console.WriteLine("==========================================");
                     Console.WriteLine("");
 
+                    Member searchmember = new Member();
+
                     Console.WriteLine("Enter the Members First and Last Name seperated by a space");
                     string[] Input = Console.ReadLine().Split("");
                     // no error checking done
                     string UserName = Input[1] + Input[0];
+                    
                     // redirect to method that does the search
-
+                    MemberCollection membersearch = new MemberCollection();
+                    
+                    //membersearch.search();
+                    
                     Console.WriteLine("Press any key to go back to staff menu");
                     Console.ReadLine();
                     StaffMenu();
@@ -186,6 +218,8 @@ namespace ToolLibrary
         public static void MemberMenu()
         {
             Console.Clear();
+
+            // While true loop to check if the member login is okay
             Console.WriteLine("Welcome to the Tool Library");
             Console.WriteLine("===============Member Menu================");
             Console.WriteLine("1. Display all the tools of a tool type");
@@ -207,6 +241,110 @@ namespace ToolLibrary
                     Console.WriteLine("1. Display all the tools of a tool type");
                     Console.WriteLine("==========================================");
                     Console.WriteLine("");
+
+                    Console.WriteLine("Enter the name of the tool type want to display");
+                    
+                    for (int i = 0; i < 9; i++) 
+                    {
+                        Console.Write(i+1);
+                        Console.Write(". ");
+                        Console.WriteLine(Enum.GetName(typeof(ToolCatergories),i+1));
+                    }
+
+                    string UIToolType = Console.ReadLine();
+
+                    if (UIToolType == "1")
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(GardeningTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "2")
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(FlooringTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "3")
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(FencingTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "4")
+                    {
+                        for (int i = 0; i < 4; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(MeasuringTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "5")
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(CleaningTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "6")
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(PaintingTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "7")
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(ElectronicTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "8")
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(ElectricityTools_Types), i + 1));
+                        }
+                    }
+
+                    else if (UIToolType == "9")
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Console.Write(i + 1);
+                            Console.Write(". ");
+                            Console.WriteLine(Enum.GetName(typeof(AutomotiveTools_Types), i + 1));
+                        }
+                    }
+
+
+                    // Find the actual tool eg 125 orbital sander from the tool type
 
                     Console.WriteLine("Press any key to go back to Member menu");
                     Console.ReadLine();

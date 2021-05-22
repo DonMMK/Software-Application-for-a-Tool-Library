@@ -4,6 +4,8 @@ using System.Text;
 
 namespace ToolLibrary
 {
+
+
     public class ToolCollection : iToolCollection
     {
         // Tools => ToolArray 
@@ -16,7 +18,8 @@ namespace ToolLibrary
         //add a given tool to this tool collection
         public void add(Tool aTool)
         {
-            throw new NotImplementedException();
+            
+
         }
 
         //delete a given tool from this tool collection
