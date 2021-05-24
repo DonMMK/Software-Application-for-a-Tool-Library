@@ -6,78 +6,78 @@ namespace ToolLibrary
 {
 
     //Using enums to store the Tool Types and categories
-    enum ToolCatergories : int
-    {
-        GardeningTools = 1,
-        FlooringTools = 2,
-        FencingTools = 3,
-        MeasuringTools = 4,
-        CleaningTools = 5,
-        PaintingTools = 6,
-        ElectronicTools = 7,
-        ElectricityTools = 8,
-        AutomotiveTools = 9
-    }
+    //enum ToolCatergories : int
+    //{
+    //    GardeningTools = 1,
+    //    FlooringTools = 2,
+    //    FencingTools = 3,
+    //    MeasuringTools = 4,
+    //    CleaningTools = 5,
+    //    PaintingTools = 6,
+    //    ElectronicTools = 7,
+    //    ElectricityTools = 8,
+    //    AutomotiveTools = 9
+    //}
 
-    enum GardeningTools_Types : int
-    {
-        LineTrimmers = 1,
-        LawnMovers = 2,
-        HandTools = 3,
-        Wheelbarrows = 4,
-        GardenPowerTools = 5
-    }
+    //enum GardeningTools_Types : int
+    //{
+    //    LineTrimmers = 1,
+    //    LawnMovers = 2,
+    //    HandTools = 3,
+    //    Wheelbarrows = 4,
+    //    GardenPowerTools = 5
+    //}
 
-    enum FlooringTools_Types : int
-    {
-        ScrapersFloorLasersFloorLevellingToolsFloorLevellingMaterialsFloorHandToolsTilingTools
-    }
+    //enum FlooringTools_Types : int
+    //{
+    //    ScrapersFloorLasersFloorLevellingToolsFloorLevellingMaterialsFloorHandToolsTilingTools
+    //}
 
-    enum FencingTools_Types : int
-    {
-        LineTrimmers = 1,
-        LawnMovers = 2,
-        HandTools = 3,
-        Wheelbarrows = 4,
-        GardenPowerTools = 5
-    }
+    //enum FencingTools_Types : int
+    //{
+    //    LineTrimmers = 1,
+    //    LawnMovers = 2,
+    //    HandTools = 3,
+    //    Wheelbarrows = 4,
+    //    GardenPowerTools = 5
+    //}
 
-    enum MeasuringTools_Types : int
-    {
-        LineTrimmers = 1,
-        LawnMovers = 2,
-        HandTools = 3,
-        Wheelbarrows = 4,
-        GardenPowerTools = 5
-    }
+    //enum MeasuringTools_Types : int
+    //{
+    //    LineTrimmers = 1,
+    //    LawnMovers = 2,
+    //    HandTools = 3,
+    //    Wheelbarrows = 4,
+    //    GardenPowerTools = 5
+    //}
 
-    enum CleaningTools_Types : int
-    {
-        DrainingCarCleaningVacuumPressureCleanersPoolCleaningFloorCleaning
-    }
+    //enum CleaningTools_Types : int
+    //{
+    //    DrainingCarCleaningVacuumPressureCleanersPoolCleaningFloorCleaning
+    //}
 
-    enum PaintingTools_Types : int
-    {
-        LineTrimmers = 1,
-        LawnMovers = 2,
-        HandTools = 3,
-        Wheelbarrows = 4,
-        GardenPowerTools = 5
-    }
-    enum ElectronicTools_Types : int
-    {
-        VoltageTester = 1,Oscilloscopes = 2,ThermalImaging = 3,DataTestTool = 4,InsulationTesters = 5
-    }
+    //enum PaintingTools_Types : int
+    //{
+    //    LineTrimmers = 1,
+    //    LawnMovers = 2,
+    //    HandTools = 3,
+    //    Wheelbarrows = 4,
+    //    GardenPowerTools = 5
+    //}
+    //enum ElectronicTools_Types : int
+    //{
+    //    VoltageTester = 1,Oscilloscopes = 2,ThermalImaging = 3,DataTestTool = 4,InsulationTesters = 5
+    //}
 
-    enum ElectricityTools_Types : int
-    {
-        TestEquipment = 1,SafetyEquipment = 2,BasicHandTools = 3,CircuitProtection = 4,CableTools = 5
-    }
+    //enum ElectricityTools_Types : int
+    //{
+    //    TestEquipment = 1,SafetyEquipment = 2,BasicHandTools = 3,CircuitProtection = 4,CableTools = 5
+    //}
 
-    enum AutomotiveTools_Types : int
-    {
-        Jacks = 1,AirCompressors = 2,BatteryChargers = 3,SocketTools = 4,Braking = 5,DriveTrain = 6
-    }
+    //enum AutomotiveTools_Types : int
+    //{
+    //    Jacks = 1,AirCompressors = 2,BatteryChargers = 3,SocketTools = 4,Braking = 5,DriveTrain = 6
+    //}
 
 
 

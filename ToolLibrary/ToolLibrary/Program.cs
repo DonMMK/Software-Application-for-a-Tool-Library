@@ -30,9 +30,23 @@ namespace ToolLibrary
             switch (Console.ReadLine()) // entry point for the user input
             {
                 case "1":
-                    StaffMenu();
+                    Console.WriteLine("Enter staff login username");
+                    string StaffLoginUsername = Console.ReadLine();
+                    Console.WriteLine("Enter staff login password");
+                    string StaffLoginPassword = Console.ReadLine();
+
+                    if(StaffLoginUsername == "staff" && StaffLoginPassword == "today123")
+                    {
+                        Console.WriteLine("staff successfully logged in");
+                        StaffMenu();
+                    }
+                    else
+                    {
+                        break;
+                    }
                     break;
                 case "2":
+                    // check if the member is already registered
                     MemberMenu();
                     break;
                 case "0":
@@ -50,6 +64,8 @@ namespace ToolLibrary
 
         public static void StaffMenu()
         {
+
+
             Console.Clear();
             Console.WriteLine("Welcome to the Tool Library");
             Console.WriteLine("================Staff Menu================");
@@ -147,6 +163,8 @@ namespace ToolLibrary
                     NewMember.PIN = Console.ReadLine();
                     MemberCollection memberCollection = new MemberCollection();
                     memberCollection.add(NewMember);
+                    Console.WriteLine("New member " + NewMember.FirstName + "has been added");
+                    
 
                     Console.WriteLine("Press any key to go back to staff menu");
                     Console.ReadLine();
@@ -220,6 +238,8 @@ namespace ToolLibrary
             Console.Clear();
 
             // While true loop to check if the member login is okay
+
+
             Console.WriteLine("Welcome to the Tool Library");
             Console.WriteLine("===============Member Menu================");
             Console.WriteLine("1. Display all the tools of a tool type");
@@ -244,104 +264,104 @@ namespace ToolLibrary
 
                     Console.WriteLine("Enter the name of the tool type want to display");
                     
-                    for (int i = 0; i < 9; i++) 
-                    {
-                        Console.Write(i+1);
-                        Console.Write(". ");
-                        Console.WriteLine(Enum.GetName(typeof(ToolCatergories),i+1));
-                    }
+                    //for (int i = 0; i < 9; i++) 
+                    //{
+                    //    Console.Write(i+1);
+                    //    Console.Write(". ");
+                    //    Console.WriteLine(Enum.GetName(typeof(ToolCatergories),i+1));
+                    //}
 
-                    string UIToolType = Console.ReadLine();
+                    //string UIToolType = Console.ReadLine();
 
-                    if (UIToolType == "1")
-                    {
-                        for (int i = 0; i < 5; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(GardeningTools_Types), i + 1));
-                        }
-                    }
+                    //if (UIToolType == "1")
+                    //{
+                    //    for (int i = 0; i < 5; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(GardeningTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "2")
-                    {
-                        for (int i = 0; i < 6; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(FlooringTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "2")
+                    //{
+                    //    for (int i = 0; i < 6; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(FlooringTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "3")
-                    {
-                        for (int i = 0; i < 5; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(FencingTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "3")
+                    //{
+                    //    for (int i = 0; i < 5; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(FencingTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "4")
-                    {
-                        for (int i = 0; i < 4; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(MeasuringTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "4")
+                    //{
+                    //    for (int i = 0; i < 4; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(MeasuringTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "5")
-                    {
-                        for (int i = 0; i < 6; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(CleaningTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "5")
+                    //{
+                    //    for (int i = 0; i < 6; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(CleaningTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "6")
-                    {
-                        for (int i = 0; i < 6; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(PaintingTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "6")
+                    //{
+                    //    for (int i = 0; i < 6; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(PaintingTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "7")
-                    {
-                        for (int i = 0; i < 5; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(ElectronicTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "7")
+                    //{
+                    //    for (int i = 0; i < 5; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(ElectronicTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "8")
-                    {
-                        for (int i = 0; i < 5; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(ElectricityTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "8")
+                    //{
+                    //    for (int i = 0; i < 5; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(ElectricityTools_Types), i + 1));
+                    //    }
+                    //}
 
-                    else if (UIToolType == "9")
-                    {
-                        for (int i = 0; i < 5; i++)
-                        {
-                            Console.Write(i + 1);
-                            Console.Write(". ");
-                            Console.WriteLine(Enum.GetName(typeof(AutomotiveTools_Types), i + 1));
-                        }
-                    }
+                    //else if (UIToolType == "9")
+                    //{
+                    //    for (int i = 0; i < 5; i++)
+                    //    {
+                    //        Console.Write(i + 1);
+                    //        Console.Write(". ");
+                    //        Console.WriteLine(Enum.GetName(typeof(AutomotiveTools_Types), i + 1));
+                    //    }
+                    //}
 
 
                     // Find the actual tool eg 125 orbital sander from the tool type

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/MISURA/ToolLibrary/ToolLibrary/ToolLibrary.csproj",
+      "projectUniqueName": "/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/ToolLibrary.csproj",
       "projectName": "ToolLibrary",
-      "projectPath": "/Volumes/MISURA/ToolLibrary/ToolLibrary/ToolLibrary.csproj",
+      "projectPath": "/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/ToolLibrary.csproj",
       "packagesPath": "/Users/don/.nuget/packages/",
-      "outputPath": "/Volumes/MISURA/ToolLibrary/ToolLibrary/obj/",
+      "outputPath": "/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/don/.config/NuGet/NuGet.Config"

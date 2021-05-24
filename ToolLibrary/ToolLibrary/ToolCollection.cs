@@ -10,7 +10,7 @@ namespace ToolLibrary
     {
         // Tools => ToolArray 
         private static int NumberofTools = 0;
-        private static Tool[] ToolsArray = new Tool[NumberofTools];
+        private Tool[] ToolsArray = new Tool[NumberofTools];
 
         public int Number => throw new NotImplementedException();
 

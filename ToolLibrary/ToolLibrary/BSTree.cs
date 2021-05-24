@@ -4,6 +4,8 @@
 // 24/3/06
 
 using System;
+using System.Collections.Generic;
+
 namespace ToolLibrary
 {
 	public class BTreeNode
@@ -43,10 +45,28 @@ namespace ToolLibrary
 	{
 		private BTreeNode root;
 
+		// Adding array
+		private List<Member> MemberList;
+
+		public Member[] MembersArray
+        {
+			get
+            {
+				InOrderTraverse();
+				return MemberList.ToArray();
+            }
+        }
+
+
+
+
 		public BSTree()
 		{
 			root = null;
 		}
+
+
+
 
 		public bool IsEmpty()
 		{
