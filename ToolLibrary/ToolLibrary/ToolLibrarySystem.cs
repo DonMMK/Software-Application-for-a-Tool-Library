@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ToolLibrary
 {
-    
+
     //Using enums to store the Tool Types and categories
     //enum ToolCatergories : int
     //{
@@ -35,7 +35,7 @@ namespace ToolLibrary
 
     //enum FencingTools_Types : int
     //{
-    //    LineTrimmers = 1,
+    //    HandTools","ElectricFencing","SteelFencingTools","PowerTools","FencingAccessories"},
     //    LawnMovers = 2,
     //    HandTools = 3,
     //    Wheelbarrows = 4,
@@ -44,7 +44,7 @@ namespace ToolLibrary
 
     //enum MeasuringTools_Types : int
     //{
-    //    LineTrimmers = 1,
+    //    "DistanceTools","LaserMeasurer","MeasuringJugs","TemperatureAndHumidityTools","LevellingTools","Markers"},
     //    LawnMovers = 2,
     //    HandTools = 3,
     //    Wheelbarrows = 4,
@@ -58,7 +58,7 @@ namespace ToolLibrary
 
     //enum PaintingTools_Types : int
     //{
-    //    LineTrimmers = 1,
+    //    {"SandingTools","Brushes","Rollers","PaintRemovalTools","PaintScrapers","Sprayers"},
     //    LawnMovers = 2,
     //    HandTools = 3,
     //    Wheelbarrows = 4,
@@ -66,17 +66,30 @@ namespace ToolLibrary
     //}
     //enum ElectronicTools_Types : int
     //{
-    //    VoltageTester = 1,Oscilloscopes = 2,ThermalImaging = 3,DataTestTool = 4,InsulationTesters = 5
+    //    VoltageTester = 1,
+    //    Oscilloscopes = 2,
+    //    ThermalImaging = 3
+    //    ,DataTestTool = 4,
+    //    InsulationTesters = 5
     //}
 
     //enum ElectricityTools_Types : int
     //{
-    //    TestEquipment = 1,SafetyEquipment = 2,BasicHandTools = 3,CircuitProtection = 4,CableTools = 5
+    //    TestEquipment = 1,
+    //    SafetyEquipment = 2,
+    //    BasicHandTools = 3,
+    //    CircuitProtection = 4,
+    //    CableTools = 5
     //}
 
     //enum AutomotiveTools_Types : int
     //{
-    //    Jacks = 1,AirCompressors = 2,BatteryChargers = 3,SocketTools = 4,Braking = 5,DriveTrain = 6
+    //    Jacks = 1,
+    //    AirCompressors = 2,
+    //    BatteryChargers = 3,
+    //    SocketTools = 4,
+    //    Braking = 5,
+    //    DriveTrain = 6
     //}
 
 
