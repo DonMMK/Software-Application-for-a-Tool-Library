@@ -6,9 +6,9 @@
 using System;
 namespace ToolLibrary 
 {
-	// invariants: every node’s left subtree contains values less than or equal to 
-	// the node’s value, and every node’s right subtree contains values 
-	// greater than or equal to the node’s value
+	// invariants: every node?s left subtree contains values less than or equal to 
+	// the node?s value, and every node?s right subtree contains values 
+	// greater than or equal to the node?s value
 	public interface IBSTree
 	{
 		// pre: true
@@ -35,7 +35,7 @@ namespace ToolLibrary
 
 		// pre: true
 		// post: all the nodes in the binary tree are visited once and only once in in-order
-		void InOrderTraverse();
+		Member[] InOrderTraverse();
 
 		// pre: true
 		// post: all the nodes in the binary tree are visited once and only once in post-order

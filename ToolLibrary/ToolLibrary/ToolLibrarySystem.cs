@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ToolLibrary
 {
-
+    
     //Using enums to store the Tool Types and categories
     //enum ToolCatergories : int
     //{
@@ -84,6 +84,7 @@ namespace ToolLibrary
 
     class ToolLibrarySystem : iToolLibrarySystem
     {
+        MemberCollection memberCollection = new MemberCollection();
 
         string[][] AllTools = new string[9][]
         {
@@ -98,42 +99,42 @@ namespace ToolLibrary
             new string[] {"Jacks","AirCompressors","BatteryChargers","SocketTools","Braking","DriveTrain"},
         };
 
-        public void add(iTool aTool)
+        public void add(Tool aTool)
         {
             throw new NotImplementedException();
         }
 
-        public void add(iTool aTool, int quantity)
+        public void add(Tool aTool, int quantity)
         {
             throw new NotImplementedException();
         }
 
-        public void add(iMember aMember)
+        public void add(Member aMember)
+        {
+            memberCollection.add(aMember);
+        }
+
+        public void borrowTool(Member aMember, Tool aTool)
         {
             throw new NotImplementedException();
         }
 
-        public void borrowTool(iMember aMember, iTool aTool)
+        public void delete(Tool aTool)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(iTool aTool)
+        public void delete(Tool aTool, int quantity)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(iTool aTool, int quantity)
+        public void delete(Member aMember)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(iMember aMember)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void displayBorrowingTools(iMember aMember)
+        public void displayBorrowingTools(Member aMember)
         {
             throw new NotImplementedException();
         }
@@ -148,12 +149,12 @@ namespace ToolLibrary
             throw new NotImplementedException();
         }
 
-        public string[] listTools(iMember aMember)
+        public string[] listTools(Member aMember)
         {
             throw new NotImplementedException();
         }
 
-        public void returnTool(iMember aMember, iTool aTool)
+        public void returnTool(Member aMember, Tool aTool)
         {
             throw new NotImplementedException();
         }

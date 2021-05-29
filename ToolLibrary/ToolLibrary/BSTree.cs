@@ -205,21 +205,29 @@ namespace ToolLibrary
 			}
 		}
 
-		public void InOrderTraverse()
+		public Member[] InOrderTraverse()
 		{
 			Console.Write("InOrder: ");
-			InOrderTraverse(root);
-			Console.WriteLine();
+			Member[] m = new Member[100];
+			InOrderTraverse(m ,root);
+			//Console.WriteLine();
+			return m;
 		}
 
-		private void InOrderTraverse(BTreeNode root)
+		private void InOrderTraverse(Member[] m, BTreeNode root)
 		{
+			int i = 0;
 			if(root != null)
 			{
-				InOrderTraverse(root.LChild);
-				Console.Write(root.Item);
-				InOrderTraverse(root.RChild);
-			}
+				InOrderTraverse(m,root.LChild);
+				//Console.Write(root.Item);
+				m[i++] = root.Item;
+				InOrderTraverse(m,root.RChild);
+            }
+            else
+            {
+
+            }
 		}
 
 		public void PostOrderTraverse()

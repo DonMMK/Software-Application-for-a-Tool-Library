@@ -7,26 +7,30 @@ namespace ToolLibrary
     public class MemberCollection : iMemberCollection
     {
         BSTree MemberTree = new BSTree();
-        public int Number => throw new NotImplementedException();
+        private int number = 0;
+        public int Number { get { return number; } }
+        
 
         public void add(Member aMember)
         {
-            MemberTree.Insert(aMember);   
+            MemberTree.Insert(aMember);
+            number++;
         }
 
         public void delete(Member aMember)
         {
             MemberTree.Delete(aMember);
+            number--;
         }
 
         public bool search(Member aMember)
         {
-            throw new NotImplementedException();
+            return MemberTree.Search(aMember);
         }
 
         public Member[] toArray()
         {
-            throw new NotImplementedException();
+            return MemberTree.InOrderTraverse();
         }
     }
 }

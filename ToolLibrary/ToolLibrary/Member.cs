@@ -67,7 +67,19 @@ namespace ToolLibrary
 
         public int CompareTo(Member other)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            Member another = other;
+            if (this.LastName.CompareTo(another.LastName) < 0)
+            {
+                return -1;
+            }else if(this.LastName.CompareTo(another.LastName) == 0)
+            {
+                return this.FirstName.CompareTo(another.FirstName);
+            }
+            else
+            {
+                return 1;
+            }
         }
 
         public void deleteTool(Tool aTool)

@@ -9,9 +9,11 @@ namespace ToolLibrary
 {
     public static class Program
     {
+        static ToolLibrarySystem librarySystem = new ToolLibrarySystem();
         public static void Main(string[] args)
         { 
             MainMenu();
+
         }
 
         
@@ -47,6 +49,7 @@ namespace ToolLibrary
                     break;
                 case "2":
                     // check if the member is already registered
+
                     MemberMenu();
                     break;
                 case "0":
@@ -161,8 +164,8 @@ namespace ToolLibrary
 
                     Console.WriteLine("Please enter four digit PIN: ");
                     NewMember.PIN = Console.ReadLine();
-                    MemberCollection memberCollection = new MemberCollection();
-                    memberCollection.add(NewMember);
+                    //MemberCollection memberCollection = new MemberCollection();
+                    librarySystem.add(NewMember);
                     Console.WriteLine("New member " + NewMember.FirstName + "has been added");
                     
 
