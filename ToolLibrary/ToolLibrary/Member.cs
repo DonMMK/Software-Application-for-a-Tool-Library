@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ToolLibrary
 {
+    // Implemented
     public class Member : iMember, IComparable<Member>
     {
         // all simple is for the private variables
@@ -36,11 +37,9 @@ namespace ToolLibrary
 
         public string UserName;
 
+        string[] NewTools = new string[20];
         
-        
-
         public Tool[] BorrowedTool = new Tool[9];
-
 
         public Member(string firstName, string lastName, string contactNumber, string pIN)
         {
@@ -55,13 +54,21 @@ namespace ToolLibrary
 
         }
         
-        
-
-        public string[] Tools => throw new NotImplementedException();
+        public string[] Tools
+        {
+            get
+            {
+                return NewTools;
+            }
+        }
 
         public void addTool(Tool aTool)
         {
-            // throw new NotImplementedException();
+            for (int count = 0; count < NewTools.Length; count++)
+            {
+                NewTools[count] = firstname;
+                    break;
+            }
 
         }
 
@@ -89,7 +96,7 @@ namespace ToolLibrary
 
         public override string ToString()
         {
-            return base.ToString();
+            return FirstName + LastName.ToString();
         }
     }
 }
