@@ -1,9 +1,6 @@
 # Software-Application-for-a-Tool-Library
 Develop a software application to solve a real-world problem. To implement this software application, you will need to use some of the data structures and algorithms covered in this unit, to store, manage and manipulate data. It will be necessary to design algorithms, to solve the computational problems arising during the development process, and to analyse the time efficiency of the algorithms. (CAB301 - Semester 1 2021)
 
-
-# Project Name
-- This repository contains the code for the project name. This project was done in language. Few Custom Lines that be copied over to the resume.
 ---
 ### Skills gained at the completion of the project
 - List out skills as per the assessment brief
