@@ -12,7 +12,9 @@
 -   This project can be opened and run in visual studio.
 ---
 ### Completed Project
-- This is where you can put pictures
+- Given below is the psuedocode for the insertion sort used and the basic layout for the CLI for the project
+- ![](Psuedocode.png)
+- ![](Toollib.png)
 ---
 ### Notes about the Project
 - open source can use/contribute to it
