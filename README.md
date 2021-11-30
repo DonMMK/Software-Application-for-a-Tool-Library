@@ -13,8 +13,8 @@
 ---
 ### Completed Project
 - Given below is the psuedocode for the insertion sort used and the basic layout for the CLI for the project
-- ![](Psuedocode.png)
-- ![](Toollib.png)
+![](Psuedocode.png)
+![](Toollib.png)
 ---
 ### Notes about the Project
 - open source can use/contribute to it
