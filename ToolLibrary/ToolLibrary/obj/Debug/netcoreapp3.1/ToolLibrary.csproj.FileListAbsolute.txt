@@ -73,10 +73,12 @@ D:/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.pdb
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/bin/Debug/netcoreapp3.1/ToolLibrary.runtimeconfig.dev.json
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/bin/Debug/netcoreapp3.1/ToolLibrary.dll
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/bin/Debug/netcoreapp3.1/ToolLibrary.pdb
-/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.csprojAssemblyReference.cache
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.AssemblyInfoInputs.cache
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.AssemblyInfo.cs
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.csproj.CoreCompileInputs.cache
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.dll
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.pdb
 /Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.genruntimeconfig.cache
+/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/bin/Debug/netcoreapp3.1/ToolLibrary
+/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.csproj.AssemblyReference.cache
+/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/Debug/netcoreapp3.1/ToolLibrary.GeneratedMSBuildEditorConfig.editorconfig

@@ -14,7 +14,7 @@
         "outputPath": "/Users/don/GitHub/Software-Application-for-a-Tool-Library/ToolLibrary/ToolLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/don/.config/NuGet/NuGet.Config"
+          "/Users/don/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
